@@ -67,7 +67,7 @@ def  watch(driver, url, choose):
         sleep_time = get_sleeptime(data)
         if choose == True:
             print("点击视频开始按钮")
-            driver.find_element(By.CSS_SELECTOR, ".jw-icon-playback").click()
+            waitJs(driver, By.CSS_SELECTOR, ".jw-icon-playback").click()
             time.sleep(2)
             data = driver.page_source  # 获取当前页面源码
             time.sleep(2)
