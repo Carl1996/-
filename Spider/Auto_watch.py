@@ -150,7 +150,7 @@ def brush_video():
     open_website(driver, url, account, password)
     time.sleep(1)
     # 选择目录页
-    for i in range(20, 30,):
+    for i in range(115, 100,-1):
         url = "http://luxshare-ict.yunxuetang.cn/kng/knowledgecatalogsearch.htm?sf=UploadDate&s=dc&pi="
         driver.get(url + str(i))
         URL = from_page_get_url(driver.page_source)
