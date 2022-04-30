@@ -88,7 +88,7 @@ def  watch(driver, url, choose):
 
         # 判断是视频且点击播放选项为False则直接开始观看视频并等待时长
         elif choose == False:
-            if sleep_time > 1200:
+            if str(sleep_time).isdigit() and sleep_time > 1200:
                 print("视频类型:时长超过20分钟，跳过")
                 pass
 
