@@ -72,7 +72,7 @@ def  watch(driver, url, choose):
             data = driver.page_source  # 获取当前页面源码
             time.sleep(2)
             sleep_time = get_sleeptime(data) # 获取时长
-            if sleep_time > 1200:
+            if str(sleep_time).isdigit() and sleep_time > 1200:
                 print("视频类型:时长超过20分钟，跳过")
                 pass
 
